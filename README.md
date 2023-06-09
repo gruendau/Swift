@@ -3,6 +3,10 @@
 #### Konstanten [Constants]
 Konstanten sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
 ```swift
+// Allgemein
+let Konstante: Typ = Wert    // Die Konstante 'Konstante' vom Typ 'Typ' soll eden Wert 'Wert' haben.
+
+// Beispiel
 let c1: String = "volker"  
 let c2 = "volker"            // Compiler bestimmt den Typ [type inference]
 ```
@@ -82,7 +86,7 @@ func gebeNamen () -> String {
 ```
 
 #### Closures [Closures]
-Ein Closure ist eine Handlungsanweisung.
+Ein Closure ist eine Handlungsanweisung.   
 [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
 ```swift
 ```
@@ -105,6 +109,7 @@ Eine Klasse ist ein Typ für referenzierbare Objekte zur Datenkapselung von Eige
 class EineKlasse {
     // Definition des Inhalts der Klasse
 }
+
 // Beispiel
 class Person {
     // Property
@@ -120,10 +125,12 @@ class Person {
 Eine Struktur ist ein Typ für nicht referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].   
 [Structs](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
 ```swift
+// Allgemein
 struct EineStruktur {
-    // Definition der Struktur
+    // Definition des Inhalts der Struktur
 }
 
+// Beispiel
 struct Person {
     var name: String = "volker"
 }
@@ -133,10 +140,30 @@ struct Person {
 Ein Protokoll bescheibt Anforderungen an benutzerdefinierte Typen die mit dem Protokoll konform gehen sollen.   
 [Protokols](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols)
 ```swift
-protocol Person {
-    var vorname: String { get }
-    var nachname: String { get }
+// Allgemein
+protocol EinProtokoll {
+    // Definition des Inhalts des Protokolls
 }
+
+// Beispiel
+protocol PersonProtokoll {
+    var vorname: String { get set }
+    var nachname: String { get set }
+    
+    func gruesse () -> String
+}
+
+// Anwendung
+class PersonKlasse: PersonProtokoll {
+    var vorname: String = "volker"
+    var nachname: String = "kasack"
+    
+    func gruesse() -> String {
+        return "Hallo " + vorname + " " + nachname + "!"
+    }
+}
+let person = PersonKlasse()
+print(person.gruesse())   // --> Hallo volker kasack
 ```
 
 #### Eigenschaften [Propeties]
