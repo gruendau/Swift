@@ -14,12 +14,10 @@ let c2 = "volker"            // Compiler bestimmt den Typ [type inference]
 func gruesse () -> String {
     return "hallo"
 }
-let function: () -> String = gruesse
-print(function())            // --> hallo
+let function: () -> String = gruesse                             // print(function()) --> hallo
 
 // Beispiel 3 - Die Konstante 'closure' speichert eine Funktion, die als Closure übergeben wird.
-let closure: () -> String = { () -> String in return "hallo" }
-print(closure())             // --> hallo
+let closure: () -> String = { () -> String in return "hallo" }   // print(closure()) --> hallo
 ```
 
 #### Variablen [Variables]
@@ -100,6 +98,11 @@ func gebeNamen () -> String {
 Ein Closure ist eine Handlungsanweisung.   
 [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
 ```swift
+// Funktion vs. Closure
+func gruesseFunktion () -> String { "hallo" }     // print(gruesseFunktion()) --> hallo
+let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) --> hallo
+
+let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) --> hallo
 ```
 
 #### Aufzählungen [Enumerations]
@@ -173,8 +176,7 @@ class PersonKlasse: PersonProtokoll {
         return "Hallo " + vorname + " " + nachname + "!"
     }
 }
-let person = PersonKlasse()
-print(person.gruesse())   // --> Hallo volker kasack
+let person = PersonKlasse()   // print(person.gruesse()) --> Hallo volker kasack
 ```
 
 #### Eigenschaften [Propeties]
