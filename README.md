@@ -46,6 +46,8 @@ let d4 = [1: "volker", 2: "nils"]
 ```
 
 #### Optionale Typen [Optional Types]
+[Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Optional-Type)
 ```swift
-let s: String = "volker"
+let o1: Optional<String>    //  Optional<Wrapped>
+let o2: String!
 ```
