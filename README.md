@@ -4,7 +4,7 @@
 Konstanten sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
 ```swift
 // Allgemein
-let Konstante: Typ = Wert    // Die Konstante 'Konstante' vom Typ 'Typ' soll eden Wert 'Wert' haben.
+let Konstante: Typ = Wert    // Die Konstante 'Konstante' vom Typ 'Typ' soll den Wert 'Wert' haben.
 
 // Beispiel
 let c1: String = "volker"  
