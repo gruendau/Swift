@@ -4,11 +4,22 @@
 Konstanten sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
 ```swift
 // Allgemein
-let Konstante: Typ = Wert    // Die Konstante 'Konstante' vom Typ 'Typ' soll den Wert 'Wert' haben.
+let konstante: Typ = wert    // Die Konstante 'konstante' vom Typ 'Typ' soll den Wert 'wert' haben.
 
-// Beispiel
+// Beispiel 1
 let c1: String = "volker"  
 let c2 = "volker"            // Compiler bestimmt den Typ [type inference]
+
+// Beispiel 2 - Die Konstante 'function' speichert eine Funktion 'gruesse', die als Funktion übergeben wird.
+func gruesse () -> String {
+    return "hallo"
+}
+let function: () -> String = gruesse
+print(function())            // --> hallo
+
+// Beispiel 3 - Die Konstante 'closure' speichert eine Funktion, die als Closure übergeben wird.
+let closure: () -> String = { () -> String in return "hallo" }
+print(closure())             // --> hallo
 ```
 
 #### Variablen [Variables]
