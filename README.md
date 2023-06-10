@@ -27,7 +27,7 @@ let closure: () -> String = { () -> String in return "hallo" }   // print(closur
 <!--- *** VARIABLES *** --->
 <details> <summary>Variablen</summary> 
     
-Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
+[Variable](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables) sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können. Für die Deklarierung wird das Schlüsselwort 'var' genutzt.
     
 ```swift
     var v1: String = "volker"
@@ -79,7 +79,7 @@ let a4 = ["volker", "nils"]
 <!--- *** SETS *** --->
 <details> <summary>.. Sets</summary> 
     
-Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
+Ein [Set](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes#Sets) ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
     
 ```swift
 let s1: Set<String> = ["volker", "nils"]     // struct Set<Element : Hashable>
@@ -90,7 +90,7 @@ let s2: Set = ["volker", "nils"]
 <!--- *** DICTIONARIESS *** --->
 <details> <summary>.. Dictionaries</summary>
     
-Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
+Ein [Dictionary](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes#Dictionaries) ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
     
 ```swift
 let d1: Dictionary<Int, String> = [1: "volker", 2: "nils"]   // struct Dictionary<Key : Hashable, Value>
@@ -119,7 +119,6 @@ let o2: String!
     
 Ein [opaquer Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/) ist ein Typ der sich verhalten soll wie ein zugeordneter Typ.   
 
-    
 ```swift
 ```
 </details>    
