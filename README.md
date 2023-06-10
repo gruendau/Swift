@@ -39,7 +39,7 @@ var v3: String { "volker" }  // Berechnete Variable [calculated property]
 <details>
 <summary>Typen</summary> 
     
-Typen [Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
+[Typen](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
     
 <details>
 <summary>Basis Typen</summary> 
@@ -55,22 +55,18 @@ let u: UInt = 1            // nur positive Ganzzahen
 let f: Float = 1.1
 let d: Double = 1.1
 ```
-</details
-    
-    
-    
-    
 </details>
- 
+</details>
+
+<!---
 
 
 
 <details>
-<summary>Collections</summary> 
+<summary>.Collections</summary> 
     [Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
-
-<details>
-<summary>Arrays</summary> 
+    
+<summary>..Arrays</summary> 
     Ein Array ist eine geordnete Liste von Elementen [items].
     
     ```swift
@@ -82,7 +78,7 @@ let d: Double = 1.1
 </details>
 
 <details>
-<summary>Sets</summary> 
+<summary>..Sets</summary> 
     Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
     
     ```swift
@@ -92,7 +88,7 @@ let d: Double = 1.1
 </details>
 
 <details>
-<summary>Dictionaries</summary>
+<summary>..Dictionaries</summary>
     Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
     
     ```swift
@@ -102,6 +98,19 @@ let d: Double = 1.1
     let d4 = [1: "volker", 2: "nils"]
     ```
 </details>
+    
+</details>    
+    
+    
+</details>
+ 
+
+
+
+
+    
+
+
     
 <details>
 <summary>Optionale Typen</summary>
@@ -154,10 +163,10 @@ Ein Closure ist eine Handlungsanweisung.
 [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
 ```swift
 // Funktion vs. Closure
-func gruesseFunktion () -> String { "hallo" }     // print(gruesseFunktion()) --> hallo
-let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) --> hallo
+func gruesseFunktion () -> String { "hallo" }     // print(gruesseFunktion()) -> hallo
+let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) -> hallo
 
-let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) --> hallo
+let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) -> hallo
 ```
 
 <details>
@@ -243,7 +252,7 @@ class PersonKlasse: PersonProtokoll {
         return "Hallo " + vorname + " " + nachname + "!"
     }
 }
-let person = PersonKlasse()   // print(person.gruesse()) --> Hallo volker kasack
+let person = PersonKlasse()   // print(person.gruesse()) -> Hallo volker kasack
 ```
 
 <details>
@@ -287,4 +296,4 @@ Indexe sind die Positionen von Elementen in geordneten Listen (Arrays).
 </details>
 
 
-
+--->
