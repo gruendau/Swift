@@ -1,7 +1,9 @@
 # Swift
 
-#### Konstanten [Constants]
-Konstanten sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
+<details>
+<summary>Konstanten</summary>   
+Konstanten [Constants] sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
+
 ```swift
 // Allgemein
 let konstante: Typ = wert    // Die Konstante 'konstante' vom Typ 'Typ' soll den Wert 'wert' haben.
@@ -19,20 +21,29 @@ let function: () -> String = gruesse                             // print(functi
 // Beispiel 3 - Die Konstante 'closure' speichert eine Funktion, die als Closure übergeben wird.
 let closure: () -> String = { () -> String in return "hallo" }   // print(closure()) --> hallo
 ```
+</details>
 
-#### Variablen [Variables]
-Variablen sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
+
+<details>
+<summary>Variablen</summary> 
+Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
+    
 ```swift
 var v1: String = "volker"
 var v2 = "volker"
 var v3: String { "volker" }  // Berechnete Variable [calculated property] 
 ```
+</details>
 
-#### Typen [Types]
-Typen sind Vorgaben für den Aufbau von Objekten.   
-[Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types)
-
-#### Basis Typen [Built-in Types]
+ 
+<details>
+<summary>Typen</summary> 
+    
+Typen [Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
+    
+<details>
+<summary>Basis Typen</summary> 
+Basis Typen [Built-in Types]
 
 ```swift
 let c: Character = "a"
@@ -44,10 +55,27 @@ let u: UInt = 1            // nur positive Ganzzahen
 let f: Float = 1.1
 let d: Double = 1.1
 ```
+</details
+    
+    
+    
+    
+</details>
+ 
+
+
+
+<details>
+<summary>xxx</summary> 
+</details>
 
 #### Sammlungs Typen [Collection Types]
 Collections sind Sammlungen von Daten in Listen.   
 [Collection Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes)
+
+<details>
+<summary>xxx</summary> 
+</details>
 ##### Arrays
 Ein Array ist eine geordnete Liste von Elementen [items].
 ```swift
@@ -56,6 +84,10 @@ let a2: [String] = ["volker", "nils"]
 let a3: Array = ["volker", "nils"]
 let a4 = ["volker", "nils"]
 ```
+
+<details>
+<summary>xxx</summary> 
+</details>
 ##### Sets
 Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
 ```swift
@@ -70,14 +102,20 @@ let d2: [Int: String] = [1: "volker", 2: "nils"]
 let d3: Dictionary = [1: "volker", 2: "nils"]
 let d4 = [1: "volker", 2: "nils"]
 ```
-
-#### Optionale Typen [Optional Types]
-Ein optionaler Typ ist eine Typ der auch nicht (nil) enthalten darf.   
+<details>
+<summary>Optionale Typen</summary>
+    
+Ein optionaler Typ [Optional Type] ist eine Typ der auch nicht 'nil' enthalten darf. 
+    
 [Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Optional-Type)
+    
 ```swift
 let o1: Optional<String>    //  Optional<Wrapped>
 let o2: String!
 ```
+</details>
+
+
 
 #### Opaque Typen [Opaque Types]
 Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
