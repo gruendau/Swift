@@ -5,7 +5,7 @@ Einführung in die 2014 vorgestellte Programmiersprache [Swift](https://de.wikip
 <!--- *** CONSTANTS *** --->
 <details> <summary>Konstanten</summary>  
     
-[Konstanten](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables) sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können. Für die Deklarierung wird das Schlüsselwort 'let' genutzt.
+[Konstanten](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables) sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können. Für die Deklarierung wird das Schlüsselwort 'let' genutzt. [link]()
 
 ```swift
 // Allgemein
