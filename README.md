@@ -106,7 +106,7 @@ let d4 = [1: "volker", 2: "nils"]
 <!--- *** OPTIONALS *** --->
 <details> <summary>. Optionale Typen</summary>
     
-Ein optionaler Typ [Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-     language/types/#Optional-Type) ist eine Typ der auch nicht 'nil' enthalten darf.
+Ein [optionaler Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Optional-Type) ist eine Typ der auch nicht 'nil' enthalten darf.
     
 ```swift
 let o1: Optional<String>    //  Optional<Wrapped>
@@ -117,10 +117,11 @@ let o2: String!
 <!--- *** OPAQUE TYPES *** --->
 <details> <summary>. Opaque Typen</summary>
     
-    Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
-    [Opaque Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/)
-    ```swift
-    ```
+Ein [opaquer Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/) ist ein Typ der sich verhalten soll wie ein zugeordneter Typ.   
+
+    
+```swift
+```
 </details>    
     
     
