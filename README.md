@@ -24,6 +24,7 @@
     ```
 </details>
 
+<!---
 <!--- *** VARIABLES *** --->
 <details> <summary>Variablen</summary> 
     
@@ -282,6 +283,7 @@
     
 <details> <summary>xxx</summary> 
 </details>
+
 
 
 --->
