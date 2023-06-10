@@ -1,37 +1,39 @@
 # Swift
 
 <!--- *** CONSTANTS *** --->
-<details> <summary>Konstanten</summary>   
-Konstanten [Constants] sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
+<details> <summary>Konstanten</summary>  
+    
+    Konstanten [Constants] sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
 
-```swift
-// Allgemein
-let konstante: Typ = wert    // Die Konstante 'konstante' vom Typ 'Typ' soll den Wert 'wert' haben.
+    ```swift
+    // Allgemein
+    let konstante: Typ = wert    // Die Konstante 'konstante' vom Typ 'Typ' soll den Wert 'wert' haben.
 
-// Beispiel 1
-let c1: String = "volker"  
-let c2 = "volker"            // Compiler bestimmt den Typ [type inference]
+    // Beispiel 1
+    let c1: String = "volker"  
+    let c2 = "volker"            // Compiler bestimmt den Typ [type inference]
 
-// Beispiel 2 - Die Konstante 'function' speichert eine Funktion 'gruesse', die als Funktion übergeben wird.
-func gruesse () -> String {
-    return "hallo"
-}
-let function: () -> String = gruesse                             // print(function()) --> hallo
+    // Beispiel 2 - Die Konstante 'function' speichert eine Funktion 'gruesse', die als Funktion übergeben wird.
+    func gruesse () -> String {
+        return "hallo"
+    }
+    let function: () -> String = gruesse                             // print(function()) --> hallo
 
-// Beispiel 3 - Die Konstante 'closure' speichert eine Funktion, die als Closure übergeben wird.
-let closure: () -> String = { () -> String in return "hallo" }   // print(closure()) --> hallo
-```
+    // Beispiel 3 - Die Konstante 'closure' speichert eine Funktion, die als Closure übergeben wird.
+    let closure: () -> String = { () -> String in return "hallo" }   // print(closure()) --> hallo
+    ```
 </details>
 
 <!--- *** VARIABLES *** --->
 <details> <summary>Variablen</summary> 
-Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
     
-```swift
-var v1: String = "volker"
-var v2 = "volker"
-var v3: String { "volker" }  // Berechnete Variable [calculated property] 
-```
+    Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
+    
+    ```swift
+    var v1: String = "volker"
+    var v2 = "volker"
+    var v3: String { "volker" }  // Berechnete Variable [calculated property] 
+    ```
 </details>
 
 <!--- *** TYPES *** ---> 
@@ -40,28 +42,30 @@ var v3: String { "volker" }  // Berechnete Variable [calculated property]
 [Typen](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
 
 <!--- *** BUILT-IN TYPES *** --->
-<details>
-<summary>Basis Typen</summary> 
-Basis Typen [Built-in Types]
+<details> <summary>Basis Typen</summary> 
+    
+    Basis Typen [Built-in Types]
 
-```swift
-let c: Character = "a"
-let s: String = "volker"
-let b: Bool = true
-let i: Int = -1            // positive und negative Ganzzahen
-let i8: Int8 = -1          // Ganzzahlen von -128 bis 127 - (Int8, Int16, Int32, Int64, Int)
-let u: UInt = 1            // nur positive Ganzzahen
-let f: Float = 1.1
-let d: Double = 1.1
-```
+    ```swift
+    let c: Character = "a"
+    let s: String = "volker"
+    let b: Bool = true
+    let i: Int = -1            // positive und negative Ganzzahen
+    let i8: Int8 = -1          // Ganzzahlen von -128 bis 127 - (Int8, Int16, Int32, Int64, Int)
+    let u: UInt = 1            // nur positive Ganzzahen
+    let f: Float = 1.1
+    let d: Double = 1.1
+    ```
 </details>
     
 <!--- *** COLLECTIONS *** --->
 <details> <summary>Collections</summary> 
+    
     [Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
     
 <!--- *** ARRAYS *** ---> 
 <details> <summary>Arrays</summary> 
+    
     Ein Array ist eine geordnete Liste von Elementen [items].
     
     ```swift
@@ -74,6 +78,7 @@ let d: Double = 1.1
 
 <!--- *** SETS *** --->
 <details> <summary>Sets</summary> 
+    
     Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
     
     ```swift
@@ -84,6 +89,7 @@ let d: Double = 1.1
 
 <!--- *** DICTIONARIESS *** --->
 <details> <summary>Dictionaries</summary>
+    
     Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
     
     ```swift
@@ -98,8 +104,8 @@ let d: Double = 1.1
 </details>  
 
 <!--- *** OPTIONALS *** --->
-<details>
-<summary>Optionale Typen</summary>
+<details> <summary>Optionale Typen</summary>
+    
     Ein optionaler Typ [Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-     language/types/#Optional-Type) ist eine Typ der auch nicht 'nil' enthalten darf.
     
     ```swift
@@ -109,11 +115,12 @@ let d: Double = 1.1
 </details>    
     
 <!--- *** OPAQUE TYPES *** --->
-<details> <summary>Opaque Typen</summary> 
-Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
-[Opaque Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/)
-```swift
-```
+<details> <summary>Opaque Typen</summary>
+    
+    Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
+    [Opaque Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/)
+    ```swift
+    ```
 </details>    
     
     
@@ -123,164 +130,157 @@ Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.
 <!--- *** FUNCTIONS *** --->
 <details> <summary>Funktionen</summary> 
     
-Eine [Function](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions) ist eine Handlungsanweisung.   
+    Eine [Function](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions) ist eine  Handlungsanweisung.   
 
-```swift
-func gebeNamen () -> String {
-    return "volker"
-}
-```
+    ```swift
+    func gebeNamen () -> String {
+        return "volker"
+    }
+    ```
 </details>
-
 
 <!--- *** CLOSURESS *** --->
-<details>
-<summary>xxx</summary> 
-</details>
-#### Closures [Closures]
-Ein Closure ist eine Handlungsanweisung.   
+<details> <summary>Closures</summary> 
+    
+    Ein Closure ist eine Handlungsanweisung.   
 [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
-```swift
-// Funktion vs. Closure
-func gruesseFunktion () -> String { "hallo" }     // print(gruesseFunktion()) -> hallo
-let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) -> hallo
+    ```swift
+    // Funktion vs. Closure
+    func gruesseFunktion () -> String { "hallo" }     // print(gruesseFunktion()) -> hallo
+    let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) -> hallo
 
-let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) -> hallo
-```
+    let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) -> hallo
+    ```
+</details>
+
+
 
 <!--- *** ENUMERATIONS *** --->
-<details>
-<summary>xxx</summary> 
+<details> <summary>Enumerationen</summary> 
+    
+    Eine [Enumeration](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations) ist eine Aufzählung von Werten.  
+
+    ```swift
+    enum Namen {
+        case volker
+        case nils
+    }
+    ```
 </details>
-#### Aufzählungen [Enumerations]
-Eine Enumeration ist eine Aufzählung von Werten.  
-[Enumerations](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations)
-```swift
-enum Namen {
-    case volker
-    case nils
-}
-```
 
 <!--- *** CLASSES *** --->
-<details>
-<summary>xxx</summary> 
-</details>
-#### Klassen [Classes]
-Eine Klasse ist ein Typ für referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].    
-[Classes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
-```swift
-// Allgemein
-class EineKlasse {
-    // Definition des Inhalts der Klasse
-}
+<details> <summary>Klassen</summary> 
+    
+    Eine [Klasse](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures) ist ein Typ für referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].    
 
-// Beispiel
-class Person {
-    // Property
-    var name: String = "volker"
-    // Methode
-    func gruesse () -> String {
-        return "Hallo " + name
+    ```swift
+    // Allgemein
+    class EineKlasse {
+        // Definition des Inhalts der Klasse
     }
-}
-```
-    
-<!--- *** STRUCTS *** --->
-<details>
-<summary>xxx</summary> 
-</details>
-    
-#### Strukturen [Structs]
-Eine Struktur ist ein Typ für nicht referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].   
-[Structs](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
-```swift
-// Allgemein
-struct EineStruktur {
-    // Definition des Inhalts der Struktur
-}
 
-// Beispiel
-struct Person {
-    var name: String = "volker"
-}
-```
+    // Beispiel
+    class Person {
+        // Property
+        var name: String = "volker"
+        // Methode
+        func gruesse () -> String {
+            return "Hallo " + name
+        }
+    }
+    ```
+</details>
+ 
+<!--- *** STRUCTS *** --->
+<details> <summary>Strukturen</summary> 
+    
+    Eine [Struktur](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures) ist ein Typ für nicht referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].   
+
+    ```swift
+    // Allgemein
+    struct EineStruktur {
+        // Definition des Inhalts der Struktur
+    }
+
+    // Beispiel
+    struct Person {
+        var name: String = "volker"
+    }
+    ```
+</details>
 
 <!--- *** PROTOKOLS *** --->
-<details>
-<summary>xxx</summary> 
-</details>
-#### Protokolle [Protokols]
-Ein Protokoll bescheibt Anforderungen an benutzerdefinierte Typen die mit dem Protokoll konform gehen sollen.   
-[Protokols](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols)
-```swift
-// Allgemein
-protocol EinProtokoll {
-    // Definition des Inhalts des Protokolls
-}
-
-// Beispiel
-protocol PersonProtokoll {
-    var vorname: String { get set }
-    var nachname: String { get set }
+<details> <summary>Protokolle</summary> 
     
-    func gruesse () -> String
-}
+    Ein [Protokoll](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols) bescheibt Anforderungen an benutzerdefinierte Typen die mit dem Protokoll konform gehen sollen.   
 
-// Anwendung
-class PersonKlasse: PersonProtokoll {
-    var vorname: String = "volker"
-    var nachname: String = "kasack"
-    
-    func gruesse() -> String {
-        return "Hallo " + vorname + " " + nachname + "!"
+    ```swift
+    // Allgemein
+    protocol EinProtokoll {
+        // Definition des Inhalts des Protokolls
     }
-}
-let person = PersonKlasse()   // print(person.gruesse()) -> Hallo volker kasack
-```
+
+    // Beispiel
+    protocol PersonProtokoll {
+        var vorname: String { get set }
+        var nachname: String { get set }
+    
+        func gruesse () -> String
+    }
+
+    // Anwendung
+    class PersonKlasse: PersonProtokoll {
+        var vorname: String = "volker"
+        var nachname: String = "kasack"
+    
+        func gruesse() -> String {
+            return "Hallo " + vorname + " " + nachname + "!"
+        }
+    }
+    let person = PersonKlasse()   // print(person.gruesse()) -> Hallo volker kasack
+    ```
+</details>
 
 <!--- *** PROPERTIES *** --->
-<details>
-<summary>xxx</summary> 
+<details> <summary>Eigenschaften</summary> 
+    
+    [Properties](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties) sind Konstanten oder Variablen in Klassen oder Strukturen.   
+
+    ```swift
+    ```
 </details>
-#### Eigenschaften [Propeties]
-Properties sind Konstanten oder Variablen in Klassen oder Strukturen.   
-[Properties](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties)
-```swift
-```
 
 <!--- *** METHODESS *** --->
 <details>
-<summary>xxx</summary> 
+<summary>Methoden</summary> 
+    
+    [Methoden](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methodes) sind Funktionen in Klassen oder Strukturen.   
+
+    ```swift
+    ```
 </details>
-#### Methoden [Methodes]
-Methoden sind Funktionen in Klassen oder Strukturen.   
-[Methodes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methodes)
-```swift
-```
 
 <!--- *** SUBSCRIPTS *** --->
-<details>
-<summary>xxx</summary> 
+<details> <summary>Indexe</summary> 
+    
+    [Indexe](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/subscripts) [Subscripts] sind die Positionen von Elementen in geordneten Listen (Arrays).    
+
+    ```swift
+    ```
 </details>
-#### Indexe [Subscripts]
-Indexe sind die Positionen von Elementen in geordneten Listen (Arrays).    
-[Subscripts](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/subscripts)
-```swift
-```
 
 <!--- *** CONTROL FLOW *** --->
-<details>
-<summary>xxx</summary> 
+<details> <summary>Ablauf Kontrolle</summary>
+    
+    [Control Flow](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow)
+    ```swift
+    ```
 </details>
-#### Schleifen [Loops]
-[Control Flow](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow)
-```swift
-```
+
+
     
     
-<details>
-<summary>xxx</summary> 
+<details> <summary>xxx</summary> 
 </details>
 
 
