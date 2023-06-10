@@ -5,7 +5,7 @@ Einführung in die 2014 vorgestellte Programmiersprache [Swift](https://de.wikip
 <!--- *** CONSTANTS *** --->
 <details> <summary>Konstanten</summary>  
     
-[Konstanten](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables) sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können. Für die Deklarierung wird das Schlüsselwort 'let' genutzt. [link]()
+[Konstanten](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables) sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können. Für die Deklarierung wird das Schlüsselwort 'let' genutzt. 
 
 ```swift
 // Allgemein
@@ -24,6 +24,7 @@ let function: () -> String = gruesse                             // print(functi
 // Beispiel 3 - Die Konstante 'closure' speichert eine Funktion, die als Closure übergeben wird.
 let closure: () -> String = { () -> String in return "hallo" }   // print(closure()) --> hallo
 ```
+[Details -->](https://github.com/gruendau/Swift/blob/main/Constants)
 </details>
 
 <!--- *** VARIABLES *** --->
@@ -32,10 +33,11 @@ let closure: () -> String = { () -> String in return "hallo" }   // print(closur
 [Variable](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables) sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können. Für die Deklarierung wird das Schlüsselwort 'var' genutzt.
     
 ```swift
-    var v1: String = "volker"
-    var v2 = "volker"
-    var v3: String { "volker" }  // Berechnete Variable [calculated property] 
+var v1: String = "volker"
+var v2 = "volker"
+var v3: String { "volker" }  // Berechnete Variable [calculated property] 
 ```
+[Details -->](https://github.com/gruendau/Swift/blob/main/Variables)
 </details>
 
 <!--- *** TYPES *** ---> 
