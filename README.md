@@ -1,5 +1,6 @@
 # Swift
 
+<!--- *** CONSTANTS *** --->
 <details>
 <summary>Konstanten</summary>   
 Konstanten [Constants] sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
@@ -23,7 +24,7 @@ let closure: () -> String = { () -> String in return "hallo" }   // print(closur
 ```
 </details>
 
-
+<!--- *** VARIABLES *** --->
 <details>
 <summary>Variablen</summary> 
 Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
@@ -35,12 +36,13 @@ var v3: String { "volker" }  // Berechnete Variable [calculated property]
 ```
 </details>
 
- 
+<!--- *** TYPES *** ---> 
 <details>
 <summary>Typen</summary> 
     
 [Typen](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
-    
+
+<!--- *** BUILT-IN TYPES *** --->
 <details>
 <summary>Basis Typen</summary> 
 Basis Typen [Built-in Types]
@@ -56,17 +58,15 @@ let f: Float = 1.1
 let d: Double = 1.1
 ```
 </details>
-</details>
-
-<!---
-
-
-
+    
+<!--- *** COLLECTIONS *** --->
 <details>
-<summary>.Collections</summary> 
+<summary>Collections</summary> 
     [Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
     
-<summary>..Arrays</summary> 
+<!--- *** ARRAYS *** ---> 
+<details>
+<summary>Arrays</summary> 
     Ein Array ist eine geordnete Liste von Elementen [items].
     
     ```swift
@@ -77,8 +77,9 @@ let d: Double = 1.1
     ```
 </details>
 
+<!--- *** SETS *** --->
 <details>
-<summary>..Sets</summary> 
+<summary>Sets</summary> 
     Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
     
     ```swift
@@ -87,8 +88,9 @@ let d: Double = 1.1
     ```
 </details>
 
+<!--- *** DICTIONARIESS *** --->
 <details>
-<summary>..Dictionaries</summary>
+<summary>Dictionaries</summary>
     Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
     
     ```swift
@@ -99,18 +101,17 @@ let d: Double = 1.1
     ```
 </details>
     
-</details>    
-    
-    
+<!--- *** END COLLECTIONS *** --->    
+</details>     
+<!--- *** END TYPES *** --->    
 </details>
- 
+
+<!---
 
 
 
-
-    
-
-
+   
+  
     
 <details>
 <summary>Optionale Typen</summary>
