@@ -1,8 +1,7 @@
 # Swift
 
 <!--- *** CONSTANTS *** --->
-<details>
-<summary>Konstanten</summary>   
+<details> <summary>Konstanten</summary>   
 Konstanten [Constants] sind Objekte zur Speicherung von Werten und/oder Funktionen, die nicht geändert werden können.
 
 ```swift
@@ -25,8 +24,7 @@ let closure: () -> String = { () -> String in return "hallo" }   // print(closur
 </details>
 
 <!--- *** VARIABLES *** --->
-<details>
-<summary>Variablen</summary> 
+<details> <summary>Variablen</summary> 
 Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktionen, die geändert werden können.
     
 ```swift
@@ -37,9 +35,8 @@ var v3: String { "volker" }  // Berechnete Variable [calculated property]
 </details>
 
 <!--- *** TYPES *** ---> 
-<details>
-<summary>Typen</summary> 
-    
+<details> <summary>Typen</summary> 
+     
 [Typen](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
 
 <!--- *** BUILT-IN TYPES *** --->
@@ -60,13 +57,11 @@ let d: Double = 1.1
 </details>
     
 <!--- *** COLLECTIONS *** --->
-<details>
-<summary>Collections</summary> 
+<details> <summary>Collections</summary> 
     [Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
     
 <!--- *** ARRAYS *** ---> 
-<details>
-<summary>Arrays</summary> 
+<details> <summary>Arrays</summary> 
     Ein Array ist eine geordnete Liste von Elementen [items].
     
     ```swift
@@ -78,8 +73,7 @@ let d: Double = 1.1
 </details>
 
 <!--- *** SETS *** --->
-<details>
-<summary>Sets</summary> 
+<details> <summary>Sets</summary> 
     Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
     
     ```swift
@@ -89,8 +83,7 @@ let d: Double = 1.1
 </details>
 
 <!--- *** DICTIONARIESS *** --->
-<details>
-<summary>Dictionaries</summary>
+<details> <summary>Dictionaries</summary>
     Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
     
     ```swift
@@ -102,17 +95,9 @@ let d: Double = 1.1
 </details>
     
 <!--- *** END COLLECTIONS *** --->    
-</details>     
-<!--- *** END TYPES *** --->    
-</details>
+</details>  
 
-<!---
-
-
-
-   
-  
-    
+<!--- *** OPTIONALS *** --->
 <details>
 <summary>Optionale Typen</summary>
     Ein optionaler Typ [Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-     language/types/#Optional-Type) ist eine Typ der auch nicht 'nil' enthalten darf.
@@ -121,33 +106,23 @@ let d: Double = 1.1
     let o1: Optional<String>    //  Optional<Wrapped>
     let o2: String!
     ```
-</details>
+</details>    
     
-
-    
-    
-</details>
-
-
-   
-
-
-
-
-
-<details>
-<summary>xxx</summary> 
-</details>
-#### Opaque Typen [Opaque Types]
+<!--- *** OPAQUE TYPES *** --->
+<details> <summary>Opaque Typen</summary> 
 Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
 [Opaque Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/)
 ```swift
 ```
-
-<details>
-<summary>xxx</summary> 
+</details>    
+    
+    
+<!--- *** END TYPES *** --->    
 </details>
-#### Funktionen [Functions]
+
+<!--- *** FUNCTIONS *** --->
+<details> <summary>Funktionen</summary> 
+    
 Eine [Function](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions) ist eine Handlungsanweisung.   
 
 ```swift
@@ -155,7 +130,10 @@ func gebeNamen () -> String {
     return "volker"
 }
 ```
+</details>
 
+
+<!--- *** CLOSURESS *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -170,6 +148,7 @@ let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) ->
 let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) -> hallo
 ```
 
+<!--- *** ENUMERATIONS *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -183,6 +162,7 @@ enum Namen {
 }
 ```
 
+<!--- *** CLASSES *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -205,6 +185,8 @@ class Person {
     }
 }
 ```
+    
+<!--- *** STRUCTS *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -224,6 +206,7 @@ struct Person {
 }
 ```
 
+<!--- *** PROTOKOLS *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -256,6 +239,7 @@ class PersonKlasse: PersonProtokoll {
 let person = PersonKlasse()   // print(person.gruesse()) -> Hallo volker kasack
 ```
 
+<!--- *** PROPERTIES *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -265,6 +249,7 @@ Properties sind Konstanten oder Variablen in Klassen oder Strukturen.
 ```swift
 ```
 
+<!--- *** METHODESS *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -274,6 +259,7 @@ Methoden sind Funktionen in Klassen oder Strukturen.
 ```swift
 ```
 
+<!--- *** SUBSCRIPTS *** --->
 <details>
 <summary>xxx</summary> 
 </details>
@@ -283,6 +269,7 @@ Indexe sind die Positionen von Elementen in geordneten Listen (Arrays).
 ```swift
 ```
 
+<!--- *** CONTROL FLOW *** --->
 <details>
 <summary>xxx</summary> 
 </details>
