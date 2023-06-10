@@ -66,72 +66,89 @@ let d: Double = 1.1
 
 
 <details>
-<summary>xxx</summary> 
-</details>
-
-#### Sammlungs Typen [Collection Types]
-Collections sind Sammlungen von Daten in Listen.   
-[Collection Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes)
+<summary>Collections</summary> 
+    [Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
 
 <details>
-<summary>xxx</summary> 
+<summary>Arrays</summary> 
+    Ein Array ist eine geordnete Liste von Elementen [items].
+    
+    ```swift
+    let a1: Array<String> = ["volker", "nils"]   // struct Array<Element>
+    let a2: [String] = ["volker", "nils"]
+    let a3: Array = ["volker", "nils"]
+    let a4 = ["volker", "nils"]
+    ```
 </details>
-##### Arrays
-Ein Array ist eine geordnete Liste von Elementen [items].
-```swift
-let a1: Array<String> = ["volker", "nils"]   // struct Array<Element>
-let a2: [String] = ["volker", "nils"]
-let a3: Array = ["volker", "nils"]
-let a4 = ["volker", "nils"]
-```
 
 <details>
-<summary>xxx</summary> 
+<summary>Sets</summary> 
+    Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
+    
+    ```swift
+    let s1: Set<String> = ["volker", "nils"]     // struct Set<Element : Hashable>
+    let s2: Set = ["volker", "nils"]
+    ```
 </details>
-##### Sets
-Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
-```swift
-let s1: Set<String> = ["volker", "nils"]     // struct Set<Element : Hashable>
-let s2: Set = ["volker", "nils"]
-```
-##### Dictionaries
-Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
-```swift
-let d1: Dictionary<Int, String> = [1: "volker", 2: "nils"]   // struct Dictionary<Key : Hashable, Value>
-let d2: [Int: String] = [1: "volker", 2: "nils"]
-let d3: Dictionary = [1: "volker", 2: "nils"]
-let d4 = [1: "volker", 2: "nils"]
-```
+
+<details>
+<summary>Dictionaries</summary>
+    Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
+    
+    ```swift
+    let d1: Dictionary<Int, String> = [1: "volker", 2: "nils"]   // struct Dictionary<Key : Hashable, Value>
+    let d2: [Int: String] = [1: "volker", 2: "nils"]
+    let d3: Dictionary = [1: "volker", 2: "nils"]
+    let d4 = [1: "volker", 2: "nils"]
+    ```
+</details>
+    
 <details>
 <summary>Optionale Typen</summary>
+    Ein optionaler Typ [Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-     language/types/#Optional-Type) ist eine Typ der auch nicht 'nil' enthalten darf.
     
-Ein optionaler Typ [Optional Type] ist eine Typ der auch nicht 'nil' enthalten darf. 
+    ```swift
+    let o1: Optional<String>    //  Optional<Wrapped>
+    let o2: String!
+    ```
+</details>
     
-[Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/#Optional-Type)
+
     
-```swift
-let o1: Optional<String>    //  Optional<Wrapped>
-let o2: String!
-```
+    
 </details>
 
 
+   
 
+
+
+
+
+<details>
+<summary>xxx</summary> 
+</details>
 #### Opaque Typen [Opaque Types]
 Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
 [Opaque Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/)
 ```swift
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Funktionen [Functions]
-Eine Funktion ist eine Handlungsanweisung.   
-[Functions](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions)
+Eine [Function](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions) ist eine Handlungsanweisung.   
+
 ```swift
 func gebeNamen () -> String {
     return "volker"
 }
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Closures [Closures]
 Ein Closure ist eine Handlungsanweisung.   
 [Closures](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures)
@@ -143,6 +160,9 @@ let gruesseClosure1: () -> String = { "hallo" }   // print(gruesseClosure1()) --
 let gruesseClosure2 = { "hallo" }                 // print(gruesseClosure2()) --> hallo
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Aufzählungen [Enumerations]
 Eine Enumeration ist eine Aufzählung von Werten.  
 [Enumerations](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations)
@@ -153,6 +173,9 @@ enum Namen {
 }
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Klassen [Classes]
 Eine Klasse ist ein Typ für referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].    
 [Classes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
@@ -172,7 +195,10 @@ class Person {
     }
 }
 ```
-
+<details>
+<summary>xxx</summary> 
+</details>
+    
 #### Strukturen [Structs]
 Eine Struktur ist ein Typ für nicht referenzierbare Objekte zur Datenkapselung von Eigenschaften [properties] und Methoden [methodes].   
 [Structs](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures)
@@ -188,6 +214,9 @@ struct Person {
 }
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Protokolle [Protokols]
 Ein Protokoll bescheibt Anforderungen an benutzerdefinierte Typen die mit dem Protokoll konform gehen sollen.   
 [Protokols](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols)
@@ -217,29 +246,45 @@ class PersonKlasse: PersonProtokoll {
 let person = PersonKlasse()   // print(person.gruesse()) --> Hallo volker kasack
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Eigenschaften [Propeties]
 Properties sind Konstanten oder Variablen in Klassen oder Strukturen.   
 [Properties](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties)
 ```swift
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Methoden [Methodes]
 Methoden sind Funktionen in Klassen oder Strukturen.   
 [Methodes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methodes)
 ```swift
 ```
 
+<details>
+<summary>xxx</summary> 
+</details>
 #### Indexe [Subscripts]
 Indexe sind die Positionen von Elementen in geordneten Listen (Arrays).    
 [Subscripts](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/subscripts)
 ```swift
 ```
 
-
+<details>
+<summary>xxx</summary> 
+</details>
 #### Schleifen [Loops]
 [Control Flow](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow)
 ```swift
 ```
+    
+    
+<details>
+<summary>xxx</summary> 
+</details>
 
 
 
