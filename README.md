@@ -42,7 +42,7 @@ Variablen [Variables] sind Objekte zur Speicherung von Werten und/oder Funktione
 [Typen](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types) sind Vorgaben für den Aufbau von Objekten.  
 
 <!--- *** BUILT-IN TYPES *** --->
-<details> <summary>Basis Typen</summary> 
+<details> <summary>. Basis Typen</summary> 
     
 Basis Typen [Built-in Types]
 
@@ -59,12 +59,12 @@ let d: Double = 1.1
 </details>
     
 <!--- *** COLLECTIONS *** --->
-<details> <summary>Collections</summary> 
+<details> <summary>. Collections</summary> 
     
-    [Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
+[Collections](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes) sind Sammlungen     von Daten in Listen.
     
 <!--- *** ARRAYS *** ---> 
-<details> <summary>Arrays</summary> 
+<details> <summary>.. Arrays</summary> 
     
 Ein Array ist eine geordnete Liste von Elementen [items].
     
@@ -77,7 +77,7 @@ let a4 = ["volker", "nils"]
 </details>
 
 <!--- *** SETS *** --->
-<details> <summary>Sets</summary> 
+<details> <summary>.. Sets</summary> 
     
 Ein Set ist eine ungeordnete Liste von unterschiedlichen Elementen [items].
     
@@ -88,7 +88,7 @@ let s2: Set = ["volker", "nils"]
 </details>
 
 <!--- *** DICTIONARIESS *** --->
-<details> <summary>Dictionaries</summary>
+<details> <summary>.. Dictionaries</summary>
     
 Ein Dictionary ist eine Liste von ungeordneten Schlüssel/Wert [key/value] Paaren. 
     
@@ -104,7 +104,7 @@ let d4 = [1: "volker", 2: "nils"]
 </details>  
 
 <!--- *** OPTIONALS *** --->
-<details> <summary>Optionale Typen</summary>
+<details> <summary>. Optionale Typen</summary>
     
 Ein optionaler Typ [Optional Type](https://docs.swift.org/swift-book/documentation/the-swift-programming-     language/types/#Optional-Type) ist eine Typ der auch nicht 'nil' enthalten darf.
     
@@ -115,7 +115,7 @@ let o2: String!
 </details>    
     
 <!--- *** OPAQUE TYPES *** --->
-<details> <summary>Opaque Typen</summary>
+<details> <summary>. Opaque Typen</summary>
     
     Ein opaquer Typ der sich verhalten soll wie ein zugeordneter Typ.   
     [Opaque Types](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/)
