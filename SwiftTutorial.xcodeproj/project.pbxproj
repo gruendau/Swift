@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		529E154D2A371E830021CD8A /* Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift; sourceTree = BUILT_PRODUCTS_DIR; };
+		529E154D2A371E830021CD8A /* SwiftTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E15502A371E830021CD8A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 		529E154E2A371E830021CD8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				529E154D2A371E830021CD8A /* Swift */,
+				529E154D2A371E830021CD8A /* SwiftTutorial */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,9 +65,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		529E154C2A371E830021CD8A /* Swift */ = {
+		529E154C2A371E830021CD8A /* SwiftTutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 529E15542A371E830021CD8A /* Build configuration list for PBXNativeTarget "Swift" */;
+			buildConfigurationList = 529E15542A371E830021CD8A /* Build configuration list for PBXNativeTarget "SwiftTutorial" */;
 			buildPhases = (
 				529E15492A371E830021CD8A /* Sources */,
 				529E154A2A371E830021CD8A /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = Swift;
+			name = SwiftTutorial;
 			productName = Swift;
-			productReference = 529E154D2A371E830021CD8A /* Swift */;
+			productReference = 529E154D2A371E830021CD8A /* SwiftTutorial */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 529E15482A371E830021CD8A /* Build configuration list for PBXProject "Swift" */;
+			buildConfigurationList = 529E15482A371E830021CD8A /* Build configuration list for PBXProject "SwiftTutorial" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				529E154C2A371E830021CD8A /* Swift */,
+				529E154C2A371E830021CD8A /* SwiftTutorial */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +265,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		529E15482A371E830021CD8A /* Build configuration list for PBXProject "Swift" */ = {
+		529E15482A371E830021CD8A /* Build configuration list for PBXProject "SwiftTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				529E15522A371E830021CD8A /* Debug */,
@@ -274,7 +274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		529E15542A371E830021CD8A /* Build configuration list for PBXNativeTarget "Swift" */ = {
+		529E15542A371E830021CD8A /* Build configuration list for PBXNativeTarget "SwiftTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				529E15552A371E830021CD8A /* Debug */,
