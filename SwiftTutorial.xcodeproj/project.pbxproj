@@ -41,7 +41,7 @@
 		529E15442A371E830021CD8A = {
 			isa = PBXGroup;
 			children = (
-				529E154F2A371E830021CD8A /* Swift */,
+				529E154F2A371E830021CD8A /* SwiftTutorial */,
 				529E154E2A371E830021CD8A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		529E154F2A371E830021CD8A /* Swift */ = {
+		529E154F2A371E830021CD8A /* SwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
 				529E15502A371E830021CD8A /* main.swift */,
 			);
-			path = Swift;
+			path = SwiftTutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
