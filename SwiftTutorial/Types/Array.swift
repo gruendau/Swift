@@ -5,9 +5,7 @@
 //  Created by Test on 12.06.23.
 //
 
-// https://www.slingacademy.com/article/swift-reduce-method/
-
-// hier eine Änderung über den Browser
+//  Dateien für die wiki-Seite ./arrays
 
 import Foundation
 
