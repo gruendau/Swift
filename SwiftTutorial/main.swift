@@ -7,13 +7,12 @@
 
 import Foundation
 
-print("Arrayc:")
-declareArray()
-declareEmptyArray()
-declareAndInitializeArray()
-
-importantArrayPropertiesAndMethodes()
-arrayPropertiesAndMethodesFromAToZ()
+print("Arrays:")
+//Arrays().declareArray()
+//Arrays().declareEmptyArray()
+//Arrays().declareAndInitializeArray()
+//Arrays().importantArrayPropertiesAndMethodes()
+Arrays().allArrayPropertiesAndMethodes()
 
 
 

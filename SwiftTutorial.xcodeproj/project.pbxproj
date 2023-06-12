@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		529E15512A371E830021CD8A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E15502A371E830021CD8A /* main.swift */; };
-		52E2AD052A372EA00099ACBC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2AD042A372EA00099ACBC /* Array.swift */; };
+		52E2AD052A372EA00099ACBC /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2AD042A372EA00099ACBC /* Arrays.swift */; };
 		52EDB9152A3779FD00596A1D /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9142A3779FD00596A1D /* Links.swift */; };
 		52EDB9172A377A9B00596A1D /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9162A377A9B00596A1D /* Classes.swift */; };
 		52EDB9192A377AAF00596A1D /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9182A377AAF00596A1D /* Dictionaries.swift */; };
@@ -19,6 +19,9 @@
 		52EDB9262A377BCB00596A1D /* Ints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9252A377BCB00596A1D /* Ints.swift */; };
 		52EDB9282A377BDD00596A1D /* Doubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9272A377BDD00596A1D /* Doubles.swift */; };
 		52EDB92B2A377C7400596A1D /* ConstAndVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB92A2A377C7400596A1D /* ConstAndVar.swift */; };
+		52EDB92D2A37823100596A1D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB92C2A37823100596A1D /* Functions.swift */; };
+		52EDB92F2A37831C00596A1D /* Wetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB92E2A37831C00596A1D /* Wetter.swift */; };
+		52EDB9312A3783CD00596A1D /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9302A3783CD00596A1D /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		529E154D2A371E830021CD8A /* SwiftTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E15502A371E830021CD8A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		52E2AD042A372EA00099ACBC /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		52E2AD042A372EA00099ACBC /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 		52EDB9142A3779FD00596A1D /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		52EDB9162A377A9B00596A1D /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		52EDB9182A377AAF00596A1D /* Dictionaries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionaries.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		52EDB9252A377BCB00596A1D /* Ints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ints.swift; sourceTree = "<group>"; };
 		52EDB9272A377BDD00596A1D /* Doubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doubles.swift; sourceTree = "<group>"; };
 		52EDB92A2A377C7400596A1D /* ConstAndVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstAndVar.swift; sourceTree = "<group>"; };
+		52EDB92C2A37823100596A1D /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		52EDB92E2A37831C00596A1D /* Wetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wetter.swift; sourceTree = "<group>"; };
+		52EDB9302A3783CD00596A1D /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +85,15 @@
 		529E154F2A371E830021CD8A /* SwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				529E15502A371E830021CD8A /* main.swift */,
 				52EDB9242A377B3E00596A1D /* Misc */,
 				52EDB9292A377C1A00596A1D /* Types */,
-				529E15502A371E830021CD8A /* main.swift */,
+				52EDB92A2A377C7400596A1D /* ConstAndVar.swift */,
 				52EDB91E2A377AE900596A1D /* Optionals.swift */,
 				52EDB9162A377A9B00596A1D /* Classes.swift */,
+				52EDB9302A3783CD00596A1D /* Structs.swift */,
 				52EDB9222A377B0900596A1D /* Protokols.swift */,
-				52EDB92A2A377C7400596A1D /* ConstAndVar.swift */,
+				52EDB92C2A37823100596A1D /* Functions.swift */,
 			);
 			path = SwiftTutorial;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 		52EDB9242A377B3E00596A1D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				52EDB92E2A37831C00596A1D /* Wetter.swift */,
 				52EDB9142A3779FD00596A1D /* Links.swift */,
 			);
 			path = Misc;
@@ -104,7 +113,7 @@
 				52EDB9252A377BCB00596A1D /* Ints.swift */,
 				52EDB9272A377BDD00596A1D /* Doubles.swift */,
 				52EDB9202A377AF700596A1D /* Strings.swift */,
-				52E2AD042A372EA00099ACBC /* Array.swift */,
+				52E2AD042A372EA00099ACBC /* Arrays.swift */,
 				52EDB91B2A377ACB00596A1D /* Sets.swift */,
 				52EDB9182A377AAF00596A1D /* Dictionaries.swift */,
 			);
@@ -174,13 +183,16 @@
 				52EDB9232A377B0900596A1D /* Protokols.swift in Sources */,
 				52EDB92B2A377C7400596A1D /* ConstAndVar.swift in Sources */,
 				52EDB9212A377AF700596A1D /* Strings.swift in Sources */,
+				52EDB92D2A37823100596A1D /* Functions.swift in Sources */,
 				52EDB9152A3779FD00596A1D /* Links.swift in Sources */,
 				52EDB9172A377A9B00596A1D /* Classes.swift in Sources */,
 				52EDB91C2A377ACB00596A1D /* Sets.swift in Sources */,
 				52EDB9262A377BCB00596A1D /* Ints.swift in Sources */,
+				52EDB92F2A37831C00596A1D /* Wetter.swift in Sources */,
 				52EDB91F2A377AE900596A1D /* Optionals.swift in Sources */,
+				52EDB9312A3783CD00596A1D /* Structs.swift in Sources */,
 				52EDB9282A377BDD00596A1D /* Doubles.swift in Sources */,
-				52E2AD052A372EA00099ACBC /* Array.swift in Sources */,
+				52E2AD052A372EA00099ACBC /* Arrays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
