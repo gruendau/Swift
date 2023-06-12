@@ -136,62 +136,76 @@ func arrayPropertiesAndMethodesFromAToZ () {
     // Eigenschaften und Methoden von Arrays van A biz Z
     var names = ["volker", "nils", "monika", "jana", "hanna"]
     
+    // .applying()
+    // Wendet den angegebenen Unterschied auf das Array an.
     //names.applying(<#T##difference: CollectionDifference<String>##CollectionDifference<String>#>)
     
+    // .capacity
     // Die Gesamtzahl der Elemente, die das Array enthalten kann, ohne neuen Speicher zuzuweisen.
     print( names.capacity )  // --> 0
 
+    // .customMirror
+    // Spiegelt das Array wider.
+    print( names.customMirror )  // --> Mirror for Array<String>
+
+    // .contains()
+    // Gibt zurück ob die Sequenz das angegebene Element enthält.
+    print( names.contains("volker") )  // --> true
+
+    // Gibt zurück ob die Sequenz das angegebene Element enthält.
+    print( names.contains(where: { $0.hasPrefix("ka") }) )  // --> true
+
+    // .compare()
     //
-    print(names.customMirror)  // --> Mirror for Array<String>
+    //names.compare(<#T##lhs: Comparator.Compared##Comparator.Compared#>, <#T##rhs: Comparator.Compared##Comparator.Compared#>)
 
+    // .compactMap()
     //
-    print(names.contains("volker"))  // --> true
+    //names.compactMap(<#T##transform: (String) throws -> ElementOfResult?##(String) throws -> ElementOfResult?#>)
 
-    //
-    print(names.contains(where: { $0.hasPrefix("ka")}))  // --> true
-
-    //  names.compare(<#T##lhs: Comparator.Compared##Comparator.Compared#>, <#T##rhs: Comparator.Compared##Comparator.Compared#>)
-
-    // names.compactMap(<#T##transform: (String) throws -> ElementOfResult?##(String) throws -> ElementOfResult?#>)
-
-    //
-    print(names.dropFirst())  // --> ["monika", "karl", "jana"]
+    // .drop()
+    // Gibt eine Teilsequenz zurück, indem Elemente übersprungen werden, für die das Closure 'true' ergibt.
+    print( names.drop(while: { !$0.hasPrefix("v") }) ) // --> ["volker"]
     
-    //
+    // .dropFirst()
+    // Gibt eine Teilsequenz zurück, die alle bis auf die angegebene Anzahl an Anfangselementen enthält.
+    print( names.dropFirst() )  // --> ["monika", "karl", "jana"]
     print(names.dropFirst(3))  // --> ["karl", "hanna", "rainer", "ludwig", "anne"]
 
-    //
-    print(names.dropLast()) // --> ["jana", "volker", "karl"]
+    // .dropLast()
+    // Gibt eine Teilsequenz zurück, die alle Endelemente bis auf die angegebene Anzahl enthält.
+    print( names.dropLast()) // --> ["jana", "volker", "karl"]
+ 
+    // Gibt die Differenz zurück, die erforderlich ist, um das Array aus dem angegebenen Array zu erzeugen.
+    print( names.difference(from: names+["günther"]) )  // --> CollectionDifference<String>(insertions: [], removals: [Swift.CollectionDifference<Swift.String>.Change.remove(offset: 4, element: "günther", associatedWith: nil)])
 
-    //
-    print(names.drop(while: { !$0.hasPrefix("v")} )) // --> ["volker"]
-
-    //
-    print(names.difference(from: names+["günther"]))  // --> CollectionDifference<String>(insertions: [], removals: [Swift.CollectionDifference<Swift.String>.Change.remove(offset: 4, element: "günther", associatedWith: nil)])
-
+    // .distance()
     // Gibt den Abstand zwischen zwei Indizes zurück.
     print( names.distance(from: 2, to: 5) )  // --> 3
     
+    // .endIndex
     //
-    print(names.endIndex)  // --> 5
+    print( names.endIndex )  // --> 5
     
-    //
-    print(names.enumerated())  // --> EnumeratedSequence<Array<String>>(_base: ["volker", "monika", "jana", "karl", "hanna", "rainer", "ludwig", "anne"])
+    // .enumerated()
+    // Gibt eine Folge von Paaren (n, x) zurück, wobei n eine aufeinanderfolgende Ganzzahl darstellt, die bei Null beginnt, und x ein Element der Folge darstellt.
+    print( names.enumerated() )  // --> EnumeratedSequence<Array<String>>(_base: ["volker", "monika", "jana", "karl", "hanna", "rainer", "ludwig", "anne"])
     
-    //
-    print(names.filter( { $0.hasPrefix("v")} ))  // --> ["volker"]
+    // .filter()
+    // Gibt ein Array zurück, das Elemente entsprechend den Anforderungen des Closures enthält.
+    print( names.filter( { $0.contains("an") }) )  // --> ["anne", "hanna", "jana"]
 
     //
-    print(names.first)  // --> Optional("karl")
+    print( names.first )  // --> Optional("karl")
     
     //
-    print(names.first(where: { $0.hasPrefix("v")}))  // --> Optional("volker")
+    print( names.first(where: { $0.hasPrefix("v") }) )  // --> Optional("volker")
 
     //
-    print(names.firstIndex(of: "vo"))  // --> nil
+    print( names.firstIndex(of: "vo") )  // --> nil
     
     //
-    print(names.firstIndex(of: "karl"))  // --> Optional(1)
+    print( names.firstIndex(of: "karl") )  // --> Optional(1)
 
     // names.flatMap(<#T##transform: (String) throws -> Sequence##(String) throws -> Sequence#>)
     
@@ -199,111 +213,113 @@ func arrayPropertiesAndMethodesFromAToZ () {
     names.forEach( { print($0) } )  // --> volker ...
 
     //
-    print(names.formatted())  // --> karl, monika, jana und volker
+    print( names.formatted() )  // --> karl, monika, jana und volker
     
     //
     print( names.indices )  // --> 0..<8
 
     // Fügt ein neues Element an der angegebenen Position ein.
     names.insert("karl", at: 3)
-    print(names.insert("joe", at: 2))
+    print( names.insert("joe", at: 2) )
     print( names )  // --> ["volker", "nils", "monika", "karl", "jana", "hanna"]
 
     //
-    print(names.isEmpty)  // --> false
+    print( names.isEmpty )  // --> false
 
 
     // Gibt eine neue Zeichenfolge zurück, indem die Elemente der Sequenz verkettet werden und zwischen jedem Element das angegebene Trennzeichen eingefügt wird.
-    print(names.joined(separator: "+"))  // --> jana+volker+joe+karl+monika
+    print( names.joined(separator: "+") )  // --> jana+volker+joe+karl+monika
 
-    print(names.joined())  // --> monikakarljoejanavolker
+    print( names.joined() )  // --> monikakarljoejanavolker
 
     // The last element of the collection.
-    print(names.last)  // --> Optional("monika")
+    print( names.last )  // --> Optional("monika")
 
     print(names.lazy)  // --> LazySequence<Array<String>>(_base: ["volker", "karl", "joe", "monika", "jana"])
 
-    print(names.last(where: { $0.contains("o") }))  // --> Optional("joe")
+    print( names.last(where: { $0.contains("o") }) )  // --> Optional("joe")
 
-    // names.lexicographicallyPrecedes(<#T##other: Sequence##Sequence#>)
+    // nam// .filter() Gibt ein Array zurück, das Elemente entsprechend den Anforderungen des Closures enthält.
+    print( names.filter( { $0.contains("an") } ) )  // --> ["anne", "hanna", "jana"]// .filter() Gibt ein Array zurück, das Elemente entsprechend den Anforderungen des Closures enthält.
+    print( names.filter( { $0.contains("an") } ) )  // --> ["anne", "hanna", "jana"]s.lexicographicallyPrecedes(<#T##other: Sequence##Sequence#>)
 
-    print(names.lastIndex(where: { $0.contains("o") }))  // --> Optional(2)
+    print( names.lastIndex(where: { $0.contains("o") }) )  // --> Optional(2)
 
-    print(names.lastIndex(of: "volker"))  // --> Optional(1)
+    print( names.lastIndex(of: "volker") )  // --> Optional(1)
 
     // Gibt einen Iterator über die Elemente der Collection zurück.
-    print(names.makeIterator())  // --> IndexingIterator<Array<String>>(_elements: ["karl", "monika", "joe", "volker", "jana"], _position: 0)
+    print( names.makeIterator() )  // --> IndexingIterator<Array<String>>(_elements: ["karl", "monika", "joe", "volker", "jana"], _position: 0)
     
     // Gibt das maximale Element in der Sequenz zurück.
-    print(names.max())  // --> Optional("volker")
+    print( names.max() )  // --> Optional("volker")
 
-    print(names.min())  // --> Optional("jana")
+    print( names.min() )  // --> Optional("jana")
 
     // Ordnet die Elemente der Sammlung neu an, sodass alle Elemente, die mit dem angegebenen Prädikat übereinstimmen, nach allen Elementen sind, die nicht übereinstimmen.
-    print(names.partition(by: { $0.contains("n")  }))  // --> 3
-    print(names)  // --> ["karl", "volker", "joe", "jana"]
+    print( names.partition(by: { $0.contains("n") }) )  // --> 3
+    print( names )  // --> ["karl", "volker", "joe", "jana"]
     
     // Entfernt das letzte Element der Sammlung und gibt es zurück.
-    print(names.popLast()) // --> Optional("monika")
+    print( names.popLast() ) // --> Optional("monika")
 
     // Gibt eine Teilsequenz bis zur angegebenen maximalen Länge zurück, die die Anfangselemente der Sammlung enthält.
-    print(names.prefix(3))  // --> ["karl", "volker", "joe"]
+    print( names.prefix(3) )  // --> ["karl", "volker", "joe"]
 
     
-    print(names.publisher)  // --> Sequence<Array<String>, Never>(sequence: ["jana", "monika", "joe", "volker", "karl"])
+    print( names.publisher )  // --> Sequence<Array<String>, Never>(sequence: ["jana", "monika", "joe", "volker", "karl"])
 
     //
-    print(names.randomElement())  // --> Optional("winfied")
+    print( names.randomElement() )  // --> Optional("winfied")
     
     // print(names.reduce("", { $0 < $1 }))
     
-    print(names.remove(at: 1))  // --> volker
-    print(names)  // --> ["karl", "joe", "jana"]
+    print( names.remove(at: 1) )  // --> volker
+    print( names )  // --> ["karl", "joe", "jana"]
     
     //
     // print(names.removeAll())
     
     names = ["karl", "volker", "joe", "jana"]
     //
-    print(names.removeLast())  // --> ludwig
+    print( names.removeLast() )  // --> ludwig
     
     //
-    print(names.removeFirst())  // --> jana
+    print( names.removeFirst() )  // --> jana
     
     // Ersetzt einen Bereich von Elementen durch die Elemente in der angegebenen Sammlung.
     names.replaceSubrange(Range(0...1), with: ["ludwig", "markus", "winfied"])
-    print(names)  // --> ["ludwig", "markus", "winfied", "jana"]
+    print( names )  // --> ["ludwig", "markus", "winfied", "jana"]
     
     names.reverse()
-    print(names)  // --> ["jana", "winfied", "markus", "ludwig"]
+    print( names )  // --> ["jana", "winfied", "markus", "ludwig"]
 
     let x = names.reversed()  // --> ReversedCollection<Array<String>>(_base: ["ludwig", "markus", "winfied", "jana"])
     print(x)
-    print(names)  // --> ["ludwig", "markus", "winfied", "jana"]
+    print( names )  // --> ["ludwig", "markus", "winfied", "jana"]
 
     // print(names.starts(with: "w"))  //-->
     names.shuffle()
-    print(names)  // -->
+    print( names )  // -->
 
-    print(names.sorted(by: < ))  // --> ["markus", "winfied"]
+    print( names.sorted(by: < ) )  // --> ["markus", "winfied"]
 
     names = ["karl", "volker", "joe", "jana"]
     names.sort()
-    print(names)  // --> ["jana", "joe", "karl", "volker"]
+    print( names )  // --> ["jana", "joe", "karl", "volker"]
 
-    print(names.shuffled())  // --> ["karl", "jana", "volker", "joe"]
+    print( names.shuffled() )  // --> ["karl", "jana", "volker", "joe"]
 
     // Gibt die längstmöglichen Teilsequenzen der Sammlung in der Reihenfolge um Elemente zurück, die dem angegebenen Element entsprechen.
-    print(names.split(separator: "jana"))  // --> [ArraySlice(["joe", "karl", "volker"])]
+    print( names.split(separator: "jana") )  // --> [ArraySlice(["joe", "karl", "volker"])]
     
     // Die Position des ersten Elements in einem nicht leeren Array.
-    print(names.startIndex)  // --> 0
+    print( names.startIndex )  // --> 0
     
     // Die Position des Arrays „hinter dem Ende“, also die Position, die um eins größer ist als das letzte gültige Indexargument.
 
-    print(names)  // --> ["jana", "joe", "karl", "volker"]
+    print( names )  // --> ["jana", "joe", "karl", "volker"]
     names.swapAt(2, 0)
-    print(names)  // --> ["karl", "joe", "jana", "volker"]
+    print( names )  // --> ["karl", "joe", "jana", "volker"]
 
     // names.split(whereSeparator: <#T##(String) throws -> Bool#>)
     names.sorted(by: >)
