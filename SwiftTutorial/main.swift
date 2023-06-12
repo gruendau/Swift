@@ -7,35 +7,11 @@
 
 import Foundation
 
-print("Hallo")
+print("Arrayc:")
+declareArray()
+declareEmptyArray()
+declareAndInitializeArray()
 
-/*
-// Eines leeres Array für Stings deklarieren
-var a1: Array<String> = Array()
-var a2: Array<String> = []
-var a3 = Array<String>()
-
-var a4: [String] = Array()
-var a5: [String] = []
-var a6 = [String]()
-
-print(type(of: a1))  // --> Array<String>
-print(a1)            // --> []
-*/
-
-/*
-// Eines leeres Array für Stings deklarieren und Werte zuweisen
-var a1: Array<String> = Array(["volker", "nils"])
-var a2: Array<String> = ["volker", "nils"]
-var a3 = Array<String>(["volker", "nils"])
-
-var a4: [String] = Array(["volker", "nils"])
-var a5: [String] = ["volker", "nils"]
-var a6 = ["volker", "nils"]
-
-print(type(of: a1))  // --> Array<String>
-print(a1)            // --> ["volker", "nils"]
-*/
 
 
 
