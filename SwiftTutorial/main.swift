@@ -7,6 +7,8 @@
 
 import Foundation
 
+print("Hallo")
+
 /*
 // Eines leeres Array für Stings deklarieren
 var a1: Array<String> = Array()
