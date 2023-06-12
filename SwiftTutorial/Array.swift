@@ -7,6 +7,8 @@
 
 // https://www.slingacademy.com/article/swift-reduce-method/
 
+// hier eine Änderung über den Browser
+
 import Foundation
 
 func declareArray () {
