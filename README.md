@@ -8,7 +8,7 @@ Einführung in die 2014 vorgestellte Programmiersprache [Swift](https://de.wikip
 - Begriffe der Programmiersprache sind hervorgehoben `swift` dargestellt.
 - Englische Begriffe sind kursiv in spitzen Klammern <_english_> angegeben.
 
-Viel Freude beim Lesen 🥰
+Viel Freude beim Lesen 🥰!
 
 [`los geht's`](https://github.com/gruendau/Swift/wiki)
 
