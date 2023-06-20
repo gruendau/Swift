@@ -7,14 +7,14 @@
 
 import Foundation
 
-print("Arrays:")
+//print("Arrays:")
 //Arrays().declareArray()
 //Arrays().declareEmptyArray()
 //Arrays().declareAndInitializeArray()
 //Arrays().importantArrayPropertiesAndMethodes()
-Arrays().allArrayPropertiesAndMethodes()
+//Arrays().allArrayPropertiesAndMethodes()
 
-
+test_print_vs_dump()
 
  
 
