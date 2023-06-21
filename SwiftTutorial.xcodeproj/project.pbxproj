@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		520AE1A72A411CE400F350CE /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE1A62A411CE400F350CE /* Variables.swift */; };
 		520AE1A92A411D3800F350CE /* print_vs_dump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE1A82A411D3800F350CE /* print_vs_dump.swift */; };
+		524EBA392A4398DB0017CD87 /* closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EBA382A4398DB0017CD87 /* closures.swift */; };
 		529E15512A371E830021CD8A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E15502A371E830021CD8A /* main.swift */; };
 		52E2AD052A372EA00099ACBC /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2AD042A372EA00099ACBC /* Arrays.swift */; };
 		52EDB9152A3779FD00596A1D /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EDB9142A3779FD00596A1D /* Links.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		520AE1A62A411CE400F350CE /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		520AE1A82A411D3800F350CE /* print_vs_dump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = print_vs_dump.swift; sourceTree = "<group>"; };
+		524EBA382A4398DB0017CD87 /* closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closures.swift; sourceTree = "<group>"; };
 		529E154D2A371E830021CD8A /* SwiftTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E15502A371E830021CD8A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		52E2AD042A372EA00099ACBC /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				52EDB9222A377B0900596A1D /* Protokols.swift */,
 				52EDB92C2A37823100596A1D /* Functions.swift */,
 				520AE1A82A411D3800F350CE /* print_vs_dump.swift */,
+				524EBA382A4398DB0017CD87 /* closures.swift */,
 			);
 			path = SwiftTutorial;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529E15512A371E830021CD8A /* main.swift in Sources */,
+				524EBA392A4398DB0017CD87 /* closures.swift in Sources */,
 				520AE1A92A411D3800F350CE /* print_vs_dump.swift in Sources */,
 				52EDB9192A377AAF00596A1D /* Dictionaries.swift in Sources */,
 				52EDB9232A377B0900596A1D /* Protokols.swift in Sources */,

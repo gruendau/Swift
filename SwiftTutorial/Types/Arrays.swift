@@ -328,7 +328,9 @@ struct Arrays {
         print( names )  // --> ["karl", "joe", "jana", "volker"]
 
         // names.split(whereSeparator: <#T##(String) throws -> Bool#>)
-        names.sorted(by: >)
+        
+        
+        print( names.sorted(by: >) )  // -->
         print( names )  // -->
         
         
@@ -340,19 +342,19 @@ struct Arrays {
 
         names = ["volker", "monika", "jana", "karl"]
         names.shuffle()
-        print(names)  // --> ["monika", "jana", "karl", "volker"]
+        print( names )  // --> ["monika", "jana", "karl", "volker"]
         
         //
         print( names.last )  // --> Optional("anne")
         
         //
-        print(names.lazy)  // --> LazySequence<Array<String>>(_base: ["volker", "jana", "karl", "monika"])
+        print( names.lazy )  // --> LazySequence<Array<String>>(_base: ["volker", "jana", "karl", "monika"])
 
         //
-        print(names.map( { "vorname: " + $0 } ))
+        print( names.map ( { "vorname: " + $0 } ))
         
         //
-        print(names.publisher)  // --> Sequence<Array<String>, Never>(sequence: ["volker", "monika", "jana", "karl", "hanna", "rainer", "ludwig", "anne"])
+        print( names.publisher )  // --> Sequence<Array<String>, Never>(sequence: ["volker", "monika", "jana", "karl", "hanna", "rainer", "ludwig", "anne"])
          
         
     }
